@@ -13,7 +13,6 @@ export default function UserInput(props) {
     // General handler for input changes
     const handleInputChange = (event) => {
         const { name, value } = event.target;
-
         // Update the state with the new value
         setInvestmentData((prevData) => {
             const newData = { ...prevData, [name]: value };

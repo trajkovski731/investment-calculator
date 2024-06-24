@@ -3,7 +3,6 @@ import '../index.css';
 export default function Result({dataToBeDisplayed}) {
     console.log('I am in Result')
     console.log(dataToBeDisplayed)
-    debugger
     return (
         <table className='result'>
             <tbody>
@@ -21,32 +20,9 @@ export default function Result({dataToBeDisplayed}) {
                         <td>{item.valueEndOfYear}</td>
                         <td>{item.interest}</td>
                         <td>{item.annualInvestment}</td>
-                        <td>5</td>
                     </tr>
                 )
             })}
-
-            {/*<td>
-                <text>Year</text>
-                <tr>123</tr>
-
-            </td>
-            <td>
-                <text>Investment Value</text>
-                <tr>321</tr>
-            </td>
-            <td>
-                <text>Interest (Year)</text>
-                <tr>321</tr>
-            </td>
-            <td>
-                <text>Total Interest</text>
-                <tr>321</tr>
-            </td>
-            <td>
-                <text>Investment Capital</text>
-                <tr>321</tr>
-            </td>*/}
             </tbody>
         </table>
     )
